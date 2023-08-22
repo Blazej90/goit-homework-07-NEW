@@ -454,35 +454,34 @@ main {
   align-items: center; */
   background-color: rgba(245, 244, 250, 1);
   display: flex;
-  flex-direction: column; /* Zmiana układu na kolumnowy */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Pełna szerokość kontenera */
-  padding: 20px; /* Dostosowujemy wypełnienie dla tła */
-  box-sizing: border-box; /* Uwzględniamy wypełnienie w pełnej szerokości */
-  background-size: 70px; /* Rozmiar tła obrazka */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .lorem-header,
 .lorem-text {
-  text-align: center; /* Wyśrodkowanie tekstu */
-  margin: 10px 0; /* Odstępy w pionie */
+  text-align: center;
+  margin: 10px 0;
 }
 
-/* Zmiany responsywności */
+/* Zmiana na widok mobilny */
 @media (max-width: 480px) {
   .lorem-box {
     margin-bottom: 30px;
   }
-  /* Zmniejszamy rozmiar obrazka proporcjonalnie */
+
   .container-svg-lorem svg {
     width: 50px;
     height: 50px;
   }
 
-  /* Dostosowujemy marginesy dla tekstu */
   .lorem-header,
   .lorem-text {
     margin: 5px 0;
@@ -493,7 +492,7 @@ main {
   .lorem-box {
     margin-bottom: 30px;
   }
-  /* Zachowujemy obecny rozmiar obrazka */
+
   .container-svg-lorem svg {
     width: 70px;
     height: 70px;
