@@ -426,6 +426,8 @@ main {
   width: 1600px;
 }
 
+/* Przed zmianami responsywności */
+
 .lorem-main-box {
   display: flex;
   justify-content: center;
@@ -438,18 +440,85 @@ main {
   margin-right: 30px;
 }
 
-.lorem-header {
+/* .lorem-header {
   padding-top: 30px;
   margin: 0px;
-}
+} */
 
 .container-svg-lorem {
-  background-color: rgba(245, 244, 250, 1);
+  /* background-color: rgba(245, 244, 250, 1);
   width: 270px;
   height: 120px;
   display: flex;
   justify-content: center;
+  align-items: center; */
+  background-color: rgba(245, 244, 250, 1);
+  display: flex;
+  flex-direction: column; /* Zmiana układu na kolumnowy */
+  justify-content: center;
   align-items: center;
+  width: 100%; /* Pełna szerokość kontenera */
+  padding: 20px; /* Dostosowujemy wypełnienie dla tła */
+  box-sizing: border-box; /* Uwzględniamy wypełnienie w pełnej szerokości */
+  background-size: 70px; /* Rozmiar tła obrazka */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lorem-header,
+.lorem-text {
+  text-align: center; /* Wyśrodkowanie tekstu */
+  margin: 10px 0; /* Odstępy w pionie */
+}
+
+/* Zmiany responsywności */
+@media (max-width: 480px) {
+  .lorem-box {
+    margin-bottom: 30px;
+  }
+  /* Zmniejszamy rozmiar obrazka proporcjonalnie */
+  .container-svg-lorem svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Dostosowujemy marginesy dla tekstu */
+  .lorem-header,
+  .lorem-text {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .lorem-box {
+    margin-bottom: 30px;
+  }
+  /* Zachowujemy obecny rozmiar obrazka */
+  .container-svg-lorem svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .lorem-main-box {
+    justify-content: space-between;
+    padding: 60px;
+  }
+
+  .lorem-box {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .lorem-main-box {
+    padding: 94px;
+  }
+
+  .lorem-box {
+    margin-bottom: 0;
+  }
 }
 
 #icon-link,
