@@ -455,9 +455,7 @@ nav {
 
 @media (min-width: 768px) {
   .lorem-box {
-    max-width: calc(
-      50% - 30px
-    ); /* Maksymalna szerokość dla widoku na 768px i więcej */
+    max-width: calc(50% - 30px);
   }
 }
 
@@ -538,10 +536,10 @@ nav {
 .what-we-do {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
+  /* padding-top: 94px;
   padding-right: 624px;
   padding-left: 624px;
-  padding-bottom: 50px;
+  padding-bottom: 50px; */
 }
 
 .what-we-do-img {
@@ -580,15 +578,24 @@ h2 {
   font-weight: bold;
 }
 
+@media (max-width: 1200px) {
+  .work {
+    display: none;
+  }
+}
+
 .work {
   justify-content: center;
-  width: 1600px;
+  /* width: 1600px; */
 }
 
 .images-work-what-we-do {
-  padding-right: 200px;
+  /* padding-right: 200px;
   padding-left: 200px;
-  padding-bottom: 94px;
+  padding-bottom: 94px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-img > li > a {
