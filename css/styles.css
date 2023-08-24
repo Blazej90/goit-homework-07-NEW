@@ -5,9 +5,7 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 1200px;
 }
 
 ul {
@@ -27,19 +25,21 @@ li {
 }
 
 header {
-  width: 100%;
+  width: 1600px;
 }
 
 nav {
   display: inline-flex;
   align-items: baseline;
-  width: 100%;
+  width: 1600px;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .webstudio {
-  /* width: 100%; */
-  padding: 24px 40px 25px 215px;
+  padding-top: 24px;
+  padding-right: 93px;
+  padding-bottom: 25px;
+  padding-left: 215px;
 }
 
 .web,
@@ -67,91 +67,10 @@ nav {
   color: var(--studio-footer-color);
 }
 
-.navigation__button {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .navigation__button {
-    display: block; /* Pokazuj przycisk na mniejszych ekranach */
-  }
-
-  .menu-toggle__button {
-    background: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline: none;
-  }
-
-  /* Ukryj elementy nawigacji w menu */
-  /* .bookmarks,
-  .contact {
-    display: none;
-  } */
-}
-
-/* MOBILE MENU*/
-.mobile-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white; /* Tło menu */
-  z-index: 1000;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Pokaż zakładki tylko w otwartym menu mobilnym */
-@media screen and (max-width: 768px) {
-  .js-menu-container.is-open .bookmarks,
-  .js-menu-container.is-open .contact {
-    display: none !important;
-  }
-}
-
-/* Przycisk "Zamknij" na stronie startowej jest ukryty */
-.js-close-menu {
-  display: none;
-}
-
-/* Przycisk "Zamknij" wewnątrz menu mobilnego jest widoczny */
-.mobile-menu .js-close-menu {
-  display: block;
-}
-
-.mobile-menu.is-open {
-  display: block;
-}
-
-.mobile-menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-.mobile-menu ul li {
-  margin-bottom: 10px;
-}
-
-.mobile-menu a {
-  text-decoration: none;
-  color: #333;
-}
-
-.mobile-menu button.js-close-menu {
-  display: block;
-  margin-top: 20px;
-}
-
 .bookmarks > li > a {
-  margin: 0;
-  display: block !important;
-  /* display: inline-flex; */
+  display: inline-flex;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   color: rgba(33, 33, 33, 1);
   margin-right: 46px;
   position: relative;
@@ -194,10 +113,9 @@ nav {
 }
 
 .contact > li > a {
-  display: block !important;
-  /* display: inline-flex; */
+  display: inline-flex;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   color: rgba(117, 117, 117, 1);
   margin-right: 30px;
 }
@@ -226,6 +144,65 @@ nav {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* <--Widok responsywny dla header--> */
+/* @media (min-width: 480px) {
+  .webstudio {
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .navigation__button {
+    display: block;
+  }
+
+  .bookmarks,
+  .contact {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .webstudio {
+    padding: 24px 20px;
+  }
+
+  .navigation__button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  .bookmarks {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .contact {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .webstudio {
+    padding: 24px 93px 25px 215px;
+  }
+
+  .navigation__button {
+    display: none;
+  }
+
+  .bookmarks {
+    align-items: center;
+    margin-right: 46px;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+} */
+
 .main-box {
   background-image: url(../images/picture-effective.jpg);
   width: 1600px;
@@ -247,6 +224,7 @@ nav {
 
 .btn-order {
   font-size: 16px;
+  font-weight: 500;
   font-weight: bold;
   line-height: 1.6;
   background-color: rgba(33, 150, 243, 1);
@@ -422,101 +400,76 @@ nav {
   padding-bottom: 40px;
 }
 
-main {
+/* main {
   width: 1600px;
-}
-
-/* Przed zmianami responsywności */
+} */
 
 .lorem-main-box {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
+  /* padding-top: 94px;
   padding-left: 215px;
-  padding-right: 215px;
+  padding-right: 215px; */
+  flex-wrap: wrap; /*Dzielenie elementów na wiele wierszy */
 }
 
 .lorem-box {
+  width: 100%; /* Szerokość na 100% dla widoku mniejszego niż 768px */
+  max-width: calc(50% - 15px); /* Maksymalna szerokość dla większych ekranów */
   margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column; /* Zmiana układu na kolumnowy */
+  align-items: center; /* Wyśrodkowanie wzdłuż osi X */
 }
 
-/* .lorem-header {
+.lorem-header {
   padding-top: 30px;
   margin: 0px;
-} */
+}
+
+.lorem-text {
+  white-space: normal; /* Ustalenie normalnej obsługi białych znaków */
+  overflow: hidden;
+  /* width: 100%;  */
+}
 
 .container-svg-lorem {
-  /* background-color: rgba(245, 244, 250, 1);
-  width: 270px;
+  background-color: rgba(245, 244, 250, 1);
+  width: 100%;
   height: 120px;
   display: flex;
   justify-content: center;
-  align-items: center; */
-  background-color: rgba(245, 244, 250, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-bottom: 10px; /* Dla lepszego odstępu od tekstu */
 }
 
-.lorem-header,
-.lorem-text {
-  text-align: center;
-  margin: 10px 0;
-}
-
-/* Zmiana na widok mobilny */
-@media (max-width: 480px) {
-  .lorem-box {
-    margin-bottom: 30px;
+@media (min-width: 320px) {
+  body {
+    overflow-x: hidden;
   }
-
-  .container-svg-lorem svg {
-    width: 50px;
-    height: 50px;
-  }
-
-  .lorem-header,
   .lorem-text {
-    margin: 5px 0;
+    width: 100%;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) {
   .lorem-box {
-    margin-bottom: 30px;
-  }
-
-  .container-svg-lorem svg {
-    width: 70px;
-    height: 70px;
+    max-width: calc(
+      50% - 30px
+    ); /* Maksymalna szerokość dla widoku na 768px i więcej */
   }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 1200px) {
   .lorem-main-box {
-    justify-content: space-between;
-    padding: 60px;
+    flex-wrap: nowrap; /* Elementy będą ułożone w jednym rzędzie */
   }
 
   .lorem-box {
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 1201px) {
-  .lorem-main-box {
-    padding: 94px;
-  }
-
-  .lorem-box {
-    margin-bottom: 0;
+    max-width: calc(
+      25% - 30px
+    ); /* Czwarta część szerokości ekranu minus marginesy */
   }
 }
 
@@ -695,7 +648,7 @@ h2 {
 .name {
   font-size: 16px;
   font-weight: bold;
-  /* font-weight: medium; */
+  font-weight: medium;
   justify-content: center;
 }
 
@@ -964,7 +917,7 @@ button:hover {
 .design-name {
   font-size: 18px;
   font-weight: 700;
-  /* font-weight: bold; */
+  font-weight: bold;
   line-height: 2;
 }
 
@@ -1029,111 +982,3 @@ button:hover {
   padding-right: 185px;
   padding-bottom: 94px;
 }
-
-/*///////////////////////////////////////////////////////////////////////////////////////////*/
-/* Media Query dla urządzeń o szerokości 768px lub większej */
-/* @media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  header,
-  nav,
-  .webstudio {
-    width: 100%;
-    padding: 24px 40px 25px 40px;
-  }
-
-  .main-box,
-  .what-we-do,
-  .our-team,
-  .container-clients,
-  footer {
-    width: 100%;
-  }
-
-  .main-text,
-  .what-we-do-img,
-  .our-team,
-  .container-clients,
-  .contact-footer-mail,
-  .contact-footer-tel,
-  .container-join,
-  .container-newsletter,
-  .btn-container {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-
-  .main-box {
-    padding: 200px 200px 15px 200px;
-  }
-
-  .what-we-do,
-  .our-team {
-    padding-right: 400px;
-    padding-left: 400px;
-  }
-
-  .what-we-do-img,
-  .images-work-what-we-do,
-  .images-persons {
-    margin-right: 15px;
-  }
-
-  .studio-header,
-  .studio-footer {
-    font-size: 22px;
-  }
-
-  .lorem-main-box,
-  .container-svg-lorem,
-  .lorem-box,
-  .images-persons-ul {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-
-  .btn-portfolio > li > button {
-    padding: 6px 18px 6px 18px;
-  }
-
-  .portfolio-examples {
-    padding-right: 185px;
-    padding-left: 185px;
-  }
-} */
-
-/* Media Query dla urządzeń o szerokości 480px lub większej */
-/* @media screen and (min-width: 480px) {
-  .webstudio {
-    padding: 15px 20px;
-  }
-
-  .main-box {
-    padding: 150px 50px 15px 50px;
-  }
-
-  .btn-order {
-    margin: auto;
-  }
-
-  .lorem-main-box,
-  .container-svg-lorem,
-  .lorem-box {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  .btn-portfolio > li > button {
-    font-size: 14px;
-    padding: 6px 16px 6px 16px;
-  }
-
-  .portfolio-examples {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-} */
