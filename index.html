@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <nav>
         <div class="webstudio">
           <a href="index.html"
@@ -30,24 +30,42 @@
           >
         </div>
         <button
-            type="button"
-            class="navigation__button js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
+          type="button"
+          class="navigation__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-toggle__button"
+            width="30"
+            height="30"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              class="menu-toggle__button"
-              width="30"
-              height="30"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use href="./images/hamburger.svg#icon-menu_40px-1"></use>
-            </svg>
-          </button>
+            <use href="./images/hamburger.svg#icon-menu_40px-1"></use>
+          </svg>
+        </button>
         <div class="js-menu-container mobile-menu">
-          <button class="js-close-menu">x</button>
+          <button class="menu-button generic-button js-close-menu">x</button>
+          <menu class="menu">
+            <li><h2 href="index.html" class="active">Agencja</h2></li>
+            <li><h2 href="portfolio.html">Portfolio</h2></li>
+            <li><h2 href="/contact">Kontakt</h2></li>
+            <div class="menu-mobile-contact">
+              <li>
+                <h2 href="mailto:info@devstudio.com">info@devstudio.com</h2>
+              </li>
+              <li><h3 href="tel:+48111111111">+48 111 111 111</h3></li>
+            </div>
+            <div class="menu-mobile-socialmedia">
+              <li><a>Instagram</a></li>
+              <li><a>Twitter</a></li>
+              <li><a>Facebook</a></li>
+              <li><a>Linkedin</a></li>
+            </div>
+          </menu>
+        </div>
         <ul class="bookmarks">
           <li><a href="index.html" class="active">Agencja</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -68,8 +86,8 @@
           </li>
         </ul>
       </nav>
-    </header> -->
-    <main>
+    </header>
+    <!-- <main>
       <div class="container">
         <div class="main-box">
           <h1 class="main-text">
@@ -176,7 +194,7 @@
           </div>
         </div>
       </div>
-      <!-- <ul class="lorem-main-box two-by-two">
+      <ul class="lorem-main-box two-by-two">
           <li class="lorem-box">
             <div class="container-svg-lorem">
               <svg widt="70" height="70">
@@ -460,9 +478,9 @@
             </svg>
           </div>
         </div>
-      </div> -->
+      </div>
     </main>
-    <!-- <footer>
+    <footer>
       <div class="footer-address">
         <div class="webstudio-footer">
           <a href=" index.html"
