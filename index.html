@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <nav>
         <div class="webstudio">
           <a href="index.html"
@@ -39,7 +39,6 @@
             class="menu-toggle__button"
             width="30"
             height="30"
-            fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -86,7 +85,7 @@
           </li>
         </ul>
       </nav>
-    </header> -->
+    </header>
     <!-- <main>
       <div class="container">
         <div class="main-box mobile-hide">
@@ -481,75 +480,87 @@
       </div>
     </main> -->
     <footer>
-      <div class="footer-address">
-        <div class="webstudio-footer">
-          <a href=" index.html"
-            ><span class="web">Web</span
-            ><span class="studio-footer">Studio</span></a
-          >
-        </div>
-        <address>
-          <p class="city">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <ul class="container-contacts-footer">
-            <div class="contact-footer-mail">
-              <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-address">
+            <div class="webstudio-footer">
+              <a href=" index.html"
+                ><span class="web">Web</span
+                ><span class="studio-footer">Studio</span></a
+              >
             </div>
-            <div class="contact-footer-tel">
-              <li>
-                <a href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </div>
-          </ul>
-        </address>
-      </div>
-      <div class="container-join">
-        <p class="join">DOŁĄCZ DO NAS</p>
-        <div class="container-icon-footer">
-          <svg id="icon-inst-footer" width="20" height="20">
-            <use href="./images/icons-social-media.svg#icon-instagram-2"></use>
-          </svg>
-        </div>
-        <div class="container-icon-footer">
-          <svg id="icon-twitt-footer" width="20" height="20">
-            <use href="./images/icons-social-media.svg#icon-twitter-1"></use>
-          </svg>
-        </div>
-        <div class="container-icon-footer">
-          <svg id="icon-face-footer" width="20" height="20">
-            <use href="./images/icons-social-media.svg#icon-facebook-1"></use>
-          </svg>
-        </div>
-        <div class="container-icon-footer">
-          <svg id="icon-link-footer" width="20" height="20">
-            <use href="./images/icons-social-media.svg#icon-linkedin-1"></use>
-          </svg>
-        </div>
-      </div>
-      <form>
-        <div class="container-newsletter">
-          <label>
-            <div class="sign-up">ZAPISZ SIĘ DO NEWSLETTERA</div>
-            <div class="input-email">
-              <input
-                type="text"
-                name="email"
-                placeholder="E-mail"
-                class="email-input"
-              />
-            </div>
-          </label>
-          <div class="btn-sign-up">
-            <button type="submit" class="btn-submit">
-              Zapisz się
-              <svg id="icon-send" width="24" height="24">
-                <use href="./images/icons-modal.svg#icon-send"></use>
-              </svg>
-            </button>
+            <address>
+              <p class="city">m. Warszawa, Aleje Jerozolimskie 21</p>
+              <ul class="container-contacts-footer">
+                <div class="contact-footer-mail">
+                  <li>
+                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                </div>
+                <div class="contact-footer-tel">
+                  <li>
+                    <a href="tel:+48111111111">+48 111 111 111</a>
+                  </li>
+                </div>
+              </ul>
+            </address>
           </div>
+          <div class="container-join">
+            <p class="join">DOŁĄCZ DO NAS</p>
+            <div class="container-icon-footer">
+              <svg id="icon-inst-footer" width="20" height="20">
+                <use
+                  href="./images/icons-social-media.svg#icon-instagram-2"
+                ></use>
+              </svg>
+            </div>
+            <div class="container-icon-footer">
+              <svg id="icon-twitt-footer" width="20" height="20">
+                <use
+                  href="./images/icons-social-media.svg#icon-twitter-1"
+                ></use>
+              </svg>
+            </div>
+            <div class="container-icon-footer">
+              <svg id="icon-face-footer" width="20" height="20">
+                <use
+                  href="./images/icons-social-media.svg#icon-facebook-1"
+                ></use>
+              </svg>
+            </div>
+            <div class="container-icon-footer">
+              <svg id="icon-link-footer" width="20" height="20">
+                <use
+                  href="./images/icons-social-media.svg#icon-linkedin-1"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <form>
+            <div class="container-newsletter">
+              <p class="sign-up">ZAPISZ SIĘ DO NEWSLETTERA</p>
+              <label>
+                <div class="input-email">
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="E-mail"
+                    class="email-input"
+                  />
+                </div>
+                <div class="btn-sign-up">
+                  <button type="submit" class="btn-submit">
+                    Zapisz się
+                    <svg id="icon-send" width="24" height="24">
+                      <use href="./images/icons-modal.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
+              </label>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
