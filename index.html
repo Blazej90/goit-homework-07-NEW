@@ -23,69 +23,73 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <div class="webstudio">
-            <a href="index.html"
-              ><span class="web">Web</span
-              ><span class="studio-header">Studio</span></a
+        <div class="container-navigation">
+          <nav>
+            <div class="webstudio">
+              <a href="index.html"
+                ><span class="web">Web</span
+                ><span class="studio-header">Studio</span></a
+              >
+            </div>
+            <button
+              type="button"
+              class="navigation__button js-open-menu mobile-only"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
             >
-          </div>
-          <button
-            type="button"
-            class="navigation__button js-open-menu mobile-only"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              class="menu-toggle__button"
-              width="30"
-              height="30"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use href="./images/hamburger.svg#icon-menu_40px-1"></use>
-            </svg>
-          </button>
-          <div class="js-menu-container mobile-menu">
-            <button class="menu-button generic-button js-close-menu">x</button>
-            <menu class="menu">
-              <li><h2 href="index.html" class="active">Agencja</h2></li>
-              <li><h2 href="portfolio.html">Portfolio</h2></li>
-              <li><h2 href="/contact">Kontakt</h2></li>
-              <div class="menu-mobile-contact">
-                <li>
-                  <h2 href="mailto:info@devstudio.com">info@devstudio.com</h2>
-                </li>
-                <li><h3 href="tel:+48111111111">+48 111 111 111</h3></li>
-              </div>
-              <div class="menu-mobile-socialmedia">
-                <li><a>Instagram</a></li>
-                <li><a>Twitter</a></li>
-                <li><a>Facebook</a></li>
-                <li><a>Linkedin</a></li>
-              </div>
-            </menu>
-          </div>
-          <ul class="bookmarks">
-            <li><a href="index.html" class="active">Agencja</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="/contact">Kontakt</a></li>
-          </ul>
-          <ul class="contact">
-            <li>
-              <svg id="icon-envelope" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
+              <svg
+                class="menu-toggle__button"
+                width="30"
+                height="30"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="./images/hamburger.svg#icon-menu_40px-1"></use>
               </svg>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-              <svg id="icon-smartphone" width="16" height="12">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              <a href="tel:+48111111111">+48 111 111 111</a>
-            </li>
-          </ul>
-        </nav>
+            </button>
+            <div class="js-menu-container mobile-menu">
+              <button class="menu-button generic-button js-close-menu">
+                x
+              </button>
+              <menu class="menu">
+                <li><h2 href="index.html" class="active">Agencja</h2></li>
+                <li><h2 href="portfolio.html">Portfolio</h2></li>
+                <li><h2 href="/contact">Kontakt</h2></li>
+                <div class="menu-mobile-contact">
+                  <li>
+                    <h2 href="mailto:info@devstudio.com">info@devstudio.com</h2>
+                  </li>
+                  <li><h3 href="tel:+48111111111">+48 111 111 111</h3></li>
+                </div>
+                <div class="menu-mobile-socialmedia">
+                  <li><a>Instagram</a></li>
+                  <li><a>Twitter</a></li>
+                  <li><a>Facebook</a></li>
+                  <li><a>Linkedin</a></li>
+                </div>
+              </menu>
+            </div>
+            <ul class="bookmarks">
+              <li><a href="index.html" class="active">Agencja</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="/contact">Kontakt</a></li>
+            </ul>
+            <ul class="contact">
+              <li>
+                <svg id="icon-envelope" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li>
+                <svg id="icon-smartphone" width="16" height="12">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                <a href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- <main>

@@ -290,26 +290,24 @@ li {
 }
 
 /* Ukryj zawartość dla innych szerokości ekranu */
-@media (max-width: 319px), (min-width: 481px) {
+@media (max-width: 320px) {
   .js-menu-container.mobile-menu {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .bookmarks,
+  .contact {
     display: none;
   }
 }
 
-/* Styl responsywny dla zakresu 320px - 480px */
 @media (min-width: 320px) and (max-width: 480px) {
-  .js-menu-container.mobile-menu {
-    display: block; /* Pokaż zawartość tylko w tym zakresie szerokości */
-  }
-}
-
-/* Styl responsywny */
-@media (min-width: 321px) and (max-width: 480px) {
-  /* Pokaż przycisk menu tylko przy rozdzielczości mobilnej */
   .mobile-only {
     display: block;
   }
-  /* Ukryj pozostałe elementy */
+
   .bookmarks,
   .contact {
     display: none;
@@ -317,11 +315,26 @@ li {
 }
 
 /* Styl adaptacyjny 1 */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
   /* Pozostaw przycisk menu widocznym na tej szerokości ekranu */
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .container-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 60px;
+    align-items: baseline;
+  }
+
   .bookmarks,
   .contact {
-    display: block;
+    /* display: block; */
+    display: flex;
   }
   .mobile-only {
     display: none;
@@ -329,8 +342,12 @@ li {
 }
 
 /* Styl adaptacyjny 2 */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   /* Ukryj przycisk menu i inne elementy na tej szerokości ekranu */
+  .container {
+    max-width: 1200px;
+  }
+
   .mobile-only {
     display: none;
   }
@@ -343,6 +360,9 @@ li {
 /* Styl adaptacyjny 3 */
 @media (min-width: 1200px) {
   /* Przywróć widoczność zakładek i innych elementów */
+  .container {
+    max-width: 1200px;
+  }
   .bookmarks,
   .contact {
     display: block;
