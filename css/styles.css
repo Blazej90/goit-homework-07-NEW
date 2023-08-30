@@ -1093,7 +1093,7 @@ label {
 }
 
 /* Mobile styles */
-@media (max-width: 320px) {
+@media (max-width: 319px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -1101,7 +1101,7 @@ label {
   }
 }
 
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   footer {
     flex-direction: column;
   }
