@@ -377,7 +377,7 @@ li {
   background-size: 100% auto;
   max-width: 428px;
   max-height: 432px;
-  padding-top: 112px;
+  /* padding-top: 112px; */
   padding-bottom: 112px;
   margin-left: auto;
   margin-right: auto;
@@ -586,9 +586,9 @@ li {
   }
   .main-box {
     background-size: 100% auto;
-    width: 100%;
-    height: auto;
-    padding-top: 56.25%;
+    width: 100% auto;
+    height: 100% auto;
+    /* padding-top: 56.25%; */
     padding-bottom: 0;
   }
   .main-text {
