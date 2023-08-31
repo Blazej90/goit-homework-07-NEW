@@ -368,17 +368,18 @@ li {
 /* ---------- MAIN ------------ */
 
 .main-box {
-  background-image: url(../images/picture-effective.jpg);
+  background-image: url(../images/image-hero.jpg);
   /* width: 100%;
   padding-top: 56.25%;
   position: relative;
   background-size: cover;
   background-position: center; */
-  background-size: 100% auto;
-  max-width: 428px;
-  max-height: 432px;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* padding-top: 112px; */
   padding-bottom: 112px;
+  background-size: 100% auto;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   /* text-align: center;  */
@@ -390,13 +391,15 @@ li {
 .main-text {
   color: white;
   text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.72px;
-  margin: auto;
-  margin-bottom: 72px;
-  max-width: 320px;
+  font-size: 26px;
+  font-weight: 900;
+  /* line-height: 1.11; */
+  line-height: 42px;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+  /* margin: auto; */
+  /* margin-bottom: 72px;
+  max-width: 320px; */
 }
 
 .btn-order {
@@ -584,13 +587,23 @@ li {
     margin: 0 auto;
     padding: 0 15px;
   }
-  .main-box {
+  /* .container-hero {
+    background-image: url(../images/image-hero.jpg);
     background-size: 100% auto;
-    width: 100% auto;
-    height: 100% auto;
-    /* padding-top: 56.25%; */
+    width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 112px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+  /* .main-box {
+    background-size: 100% auto;
+    width: 100%;
+    padding-top: 83.33%; 
     padding-bottom: 0;
-  }
+  } */
+
   .main-text {
     margin-bottom: 32px;
     max-width: 100%;
@@ -603,14 +616,57 @@ li {
   }
   .container {
     max-width: 768px;
+  }
+  .main-box {
+    background-image: url(../images/image-hero.jpg);
+    background-size: 100% auto;
+    width: 768px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 112px 0;
+  }
+  .main-text {
+    max-width: 320px;
+    margin: 0 auto 72px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .js-menu-container.is-open + .mobile-hide {
+    display: none;
+  }
+  .container {
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
   }
   .main-box {
-    background-image: url(../images/picture-effective.jpg);
+    background-image: url(../images/image-hero.jpg);
     background-size: 100% auto;
-    width: 768px;
-    height: 400px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 112px 0;
+  }
+  .main-text {
+    max-width: 320px;
+    margin: 0 auto 72px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .js-menu-container.is-open + .mobile-hide {
+    display: none;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .main-box {
+    background-image: url(../images/image-hero.jpg);
+    background-size: 100% auto;
+    width: 1200px;
     margin: 0 auto;
     text-align: center;
     padding: 112px 0;
@@ -976,7 +1032,7 @@ h2 {
 
 /* ------FOOTER------ */
 .container {
-  max-width: 480px;
+  max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
