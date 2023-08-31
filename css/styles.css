@@ -4,10 +4,9 @@ body {
   color: rgba(33, 33, 33, 1);
 }
 
-body {
-  overflow-x: hidden;
-}
-header {
+body,
+header,
+main {
   overflow-x: hidden;
 }
 
@@ -29,6 +28,14 @@ li {
   align-items: baseline;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 } */
+
+.container-navigation {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .webstudio {
   padding-top: 15px;
@@ -150,6 +157,13 @@ li {
   color: rgba(33, 150, 243, 1);
 }
 
+.bookmarks-contact {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .bookmarks > li > a {
   display: inline-flex;
   font-size: 14px;
@@ -227,63 +241,6 @@ li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Styl dla widoku mobilnego */
-/* @media (max-width: 480px) {
-  .bookmarks,
-  .contact {
-    display: none;
-  }
-  .navigation__button {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .js-open-menu {
-    display: none;
-  }
-
-  .bookmarks,
-  .contact {
-    display: none;
-  }
-
-  .webstudio {
-    display: inline-block;
-  }
-
-  .bookmarks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-  }
-
-  .bookmarks > li {
-    margin-right: 46px;
-  }
-} */
-
-/* Styl tablet */
-
-/* @media (min-width: 768px) {
-  .contact {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: auto;
-  }
-
-  .contact > li {
-    display: block;
-    margin-bottom: 10px; 
-  }
-} */
-
 /* Ukryj przycisk menu w pozostałych przypadkach */
 .mobile-only {
   display: none;
@@ -343,9 +300,20 @@ li {
   .mobile-only {
     display: none;
   }
-  .bookmarks,
+
+  nav {
+    display: flex;
+  }
+
+  .bookmarks {
+    display: flex;
+  }
   .contact {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .webstudio {
+    position: absolute;
   }
 }
 
@@ -357,7 +325,7 @@ li {
   }
   .bookmarks,
   .contact {
-    display: block;
+    display: flex;
   }
 
   .mobile-only {
@@ -368,20 +336,17 @@ li {
 /* ---------- MAIN ------------ */
 
 .main-box {
-  background-image: url(../images/image-hero.jpg);
-  /* width: 100%;
-  padding-top: 56.25%;
-  position: relative;
-  background-size: cover;
-  background-position: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* padding-top: 112px; */
+  background-image: url(../images/mobile-x1.jpg);
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  padding-top: 112px;
   padding-bottom: 112px;
-  background-size: 100% auto;
-  width: 480px;
+  background-size: cover;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
   /* text-align: center;  */
   /* box-shadow: -1600px 22px 0px 1600px rgba(0, 0, 0, 0.5) inset;
   -webkit-box-shadow: -1600px 22px 0px 1600px rgba(0, 0, 0, 0.5) inset;
@@ -393,7 +358,7 @@ li {
   text-align: center;
   font-size: 26px;
   font-weight: 900;
-  /* line-height: 1.11; */
+  line-height: 1.61;
   line-height: 42px;
   letter-spacing: 1.56px;
   text-transform: uppercase;
@@ -439,9 +404,10 @@ li {
   background-color: rgba(255, 255, 255, 1);
   padding: 20px;
   border-radius: 4px;
-  width: 528px;
+  width: 450px;
+  height: 609px;
   position: relative;
-  max-width: 90%;
+  /* max-width: 90%; */
 }
 
 .modal-close {
@@ -476,9 +442,9 @@ li {
   color: black;
 }
 
-.id-placeholder-modal > label {
+/* .id-placeholder-modal > label {
   display: block;
-}
+} */
 
 .placeholder-modal-text {
   color: rgba(117, 117, 117, 1);
@@ -490,7 +456,7 @@ li {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  width: 448px;
+  width: 100%;
   margin-right: 12px;
   margin-bottom: 10px;
   outline: none;
@@ -529,7 +495,7 @@ li {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
-  width: 448px;
+  width: 100%;
   margin-right: 12px;
   margin-bottom: 10px;
   box-sizing: border-box;
@@ -561,13 +527,17 @@ li {
 }
 
 .privacy-text {
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   margin: 0;
   padding-bottom: 30px;
   padding-top: -50px;
   color: rgba(117, 117, 117, 1);
   text-align: center;
+  align-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .privacy-text u {
@@ -587,26 +557,19 @@ li {
     margin: 0 auto;
     padding: 0 15px;
   }
-  /* .container-hero {
-    background-image: url(../images/image-hero.jpg);
-    background-size: 100% auto;
-    width: 480px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 112px 0;
-    background-repeat: no-repeat;
+  .main-box {
+    background-image: url(../images/mobile-x1.jpg);
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-size: cover;
-  } */
-  /* .main-box {
-    background-size: 100% auto;
-    width: 100%;
-    padding-top: 83.33%; 
-    padding-bottom: 0;
-  } */
-
+    max-width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .main-text {
     margin-bottom: 32px;
-    max-width: 100%;
+    max-width: 320px;
   }
 }
 
@@ -618,12 +581,14 @@ li {
     max-width: 768px;
   }
   .main-box {
-    background-image: url(../images/image-hero.jpg);
-    background-size: 100% auto;
-    width: 768px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 112px 0;
+    background-image: url(../images/tablet-x1.jpg);
+    background-size: cover;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main-text {
     max-width: 320px;
@@ -641,12 +606,14 @@ li {
     padding: 0 15px;
   }
   .main-box {
-    background-image: url(../images/image-hero.jpg);
-    background-size: 100% auto;
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 112px 0;
+    background-image: url(../images/desktop-x1.jpg);
+    background-size: cover;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main-text {
     max-width: 320px;
@@ -664,12 +631,14 @@ li {
     padding: 0 15px;
   }
   .main-box {
-    background-image: url(../images/image-hero.jpg);
-    background-size: 100% auto;
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 112px 0;
+    background-image: url(../images/desktop-x1.jpg);
+    background-size: cover;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main-text {
     max-width: 320px;
@@ -1340,7 +1309,7 @@ label {
     justify-content: space-between;
   }
 
-  label {
+  .label-footer {
     display: flex;
   }
 
@@ -1393,7 +1362,7 @@ label {
     margin-left: auto;
   }
 
-  label {
+  .label-footer {
     display: flex;
   }
   .btn-sign-up {
