@@ -340,10 +340,8 @@ nav {
 
 /* ---------- MAIN ------------ */
 
-.main-box {
+/* .main-box {
   background-image: url(../images/mobile-x1.jpg);
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   padding-top: 112px;
   padding-bottom: 112px;
   background-size: cover;
@@ -352,11 +350,11 @@ nav {
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
-  /* text-align: center;  */
-  /* box-shadow: -1600px 22px 0px 1600px rgba(0, 0, 0, 0.5) inset;
+  text-align: center; 
+  box-shadow: -1600px 22px 0px 1600px rgba(0, 0, 0, 0.5) inset;
   -webkit-box-shadow: -1600px 22px 0px 1600px rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: -1600px 22px 0px 1600px rgba(0, 0, 0, 0.5) inset; */
-}
+  -moz-box-shadow: -1600px 22px 0px 1600px rgba(0, 0, 0, 0.5) inset;
+} */
 
 .main-text {
   color: white;
@@ -669,7 +667,6 @@ nav {
 
 .lorem-box {
   width: 100%;
-  max-width: calc(50% - 15px);
   margin-right: 30px;
   margin-bottom: 30px;
   display: flex;
@@ -714,6 +711,9 @@ nav {
   .lorem-box {
     max-width: calc(50% - 30px);
   }
+  .lorem-box {
+    align-items: flex-start;
+  }
   .images-persons {
     max-width: calc(50% - 30px);
   }
@@ -726,6 +726,9 @@ nav {
 
   .lorem-box {
     max-width: calc(25% - 30px);
+  }
+  .lorem-box {
+    align-items: flex-start;
   }
 }
 
