@@ -786,7 +786,7 @@ h2 {
   font-weight: bold;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .work {
     display: none;
   }
@@ -802,13 +802,18 @@ h2 {
   align-items: center;
 }
 
+.work-img {
+  display: flex;
+  padding: 0;
+}
+
 .work-img > li > a {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-right: 215px;
+  /* padding-right: 215px;
   padding-bottom: 94px;
-  padding-left: 215px;
+  padding-left: 215px; */
 }
 
 /* ----- TEAM ------ */
