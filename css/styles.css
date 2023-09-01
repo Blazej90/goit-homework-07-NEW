@@ -834,7 +834,7 @@ h2 {
 }
 
 .images-persons {
-  flex-basis: calc(33.333% - 20px);
+  /* flex-basis: calc(33.333% - 20px); */
 
   display: inline-block;
   flex-direction: column;
@@ -849,13 +849,13 @@ h2 {
   -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
 }
 
-.images-persons:last-child {
+/* .images-persons:last-child {
   margin-right: 0px;
 }
 
 .images-persons:first-child {
   margin-left: 0px;
-}
+} */
 
 .name {
   font-size: 16px;
@@ -921,25 +921,48 @@ h2 {
 }
 
 /* Mobile styles */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .images-persons {
     flex-basis: 100%;
     margin: 10px auto;
   }
+  .images-persons-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 /* Tablet styles */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* @media screen and (min-width: 481px) and (max-width: 767px) {
   .images-persons {
     flex-basis: calc(50% - 20px);
     margin: 10px auto;
   }
-}
+} */
 
 /* Desktop styles */
-@media screen and (min-width: 769px) {
-  .images-persons {
-    flex-basis: calc(33.333% - 20px);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+  .images-persons-ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .images-persons-ul {
+    display: flex;
+    padding: 0;
   }
 }
 
