@@ -317,9 +317,9 @@ nav {
     display: flex;
     flex-direction: column;
   }
-  .webstudio {
+  /* .webstudio {
     position: absolute;
-  }
+  } */
 }
 
 /* Styl adaptacyjny 3 */
