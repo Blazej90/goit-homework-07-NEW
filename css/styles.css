@@ -1410,9 +1410,12 @@ address {
     display: flex;
   }
 
-  .sign-up,
   .input-email {
     flex: 1;
+  }
+
+  .sign-up {
+    display: flex;
   }
 
   .footer-address {
@@ -1459,6 +1462,10 @@ address {
   }
   .btn-sign-up {
     margin-left: 20px;
+  }
+
+  .sign-up {
+    display: flex;
   }
 }
 
