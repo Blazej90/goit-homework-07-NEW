@@ -94,10 +94,15 @@ h2 {
   background-color: white;
 }
 
+.mobile-area {
+  padding-top: 250px;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  overflow: scroll;
 }
 
 .menu h2 {
@@ -709,6 +714,7 @@ h2 {
     /* margin: 0 auto;
     padding: 0 15px; */
   }
+
   .js-menu-container.is-open + .mobile-hide {
     display: none;
   }
@@ -778,6 +784,22 @@ h2 {
     font-size: 44px;
     letter-spacing: 2.64px;
     line-height: 1.5;
+  }
+
+  .modal-content {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 4px;
+    width: 528px;
+    height: 581px;
+    position: relative;
+  }
+  .modal-text > p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 0;
   }
 }
 
@@ -1552,11 +1574,11 @@ address {
     text-align: center;
   }
 
-  form {
+  /* form {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+  } */
 
   .label-footer {
     display: flex;
