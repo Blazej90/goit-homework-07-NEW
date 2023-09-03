@@ -1526,14 +1526,14 @@ address {
   .footer-wrap {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around;
-    row-gap: 60px; */
+    justify-content: space-around;
+    /* row-gap: 60px; */
     align-items: baseline;
   }
 
   .container-join {
     margin-bottom: 0;
-    margin-left: auto;
+    /* margin-left: auto; */
   }
 
   form {
