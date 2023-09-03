@@ -267,37 +267,46 @@
               <div class="what-we-do-img">
                 <li>
                   <div class="overlay">APLIKACJE KOMPUTEROWE</div>
-                  <img
-                    src="images/box1.jpg"
-                    srcset="images/box1_2x.jpg 2x"
+                  <picture>
+                    <source
+                    srcset="./images/box1_desktop_1x.jpg 1x, ./images/box1_desktop_2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./images/box1_desktop_1x.jpg" 
                     alt="write code"
                     width="370"
-                    height="294"
-                  />
+                    height="294"/>
+                  </picture>
                 </li>
               </div>
               <div class="what-we-do-img">
                 <li>
                   <div class="overlay">APLIKACJE MOBILNE</div>
-                  <img
-                    src="images/box2.jpg"
-                    srcset="images/box2_2x.jpg 2x"
-                    alt="mobile aplication"
+                  <picture>
+                    <source
+                    srcset="./images/box2_desktop_1x.jpg 1x, ./images/box2_desktop_2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./images/box2_desktop_1x.jpg" 
+                    alt="mobile apps"
                     width="370"
-                    height="294"
-                  />
+                    height="294"/>
+                  </picture>
                 </li>
               </div>
               <div class="what-we-do-img">
                 <li>
                   <div class="overlay">ROZWIĄZANIA GRAFICZNE</div>
-                  <img
-                    src="images/box3.jpg"
-                    srcset="images/box3_2x.jpg 2x"
-                    alt="color design"
+                  <picture>
+                    <source
+                    srcset="./images/box3_desktop_1x.jpg 1x, ./images/box3_desktop_2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./images/box3_desktop_1x.jpg" 
+                    alt="graphics solutions"
                     width="370"
-                    height="294"
-                  />
+                    height="294"/>
+                  </picture>
                 </li>
               </div>
             </ul>
@@ -314,13 +323,25 @@
                   <ul class="images-persons-ul">
                     <div class="images-persons">
                       <li>
-                        <img
-                          src="images/teamcard1.jpg"
-                          srcset="images/teamcard1_2x.jpg 2x"
+                      <picture>
+                        <source
+                          srcset="./images/teamcard1_desktop_1x.jpg 1x, ./images/teamcard1_desktop_2x 2x"
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="./images/teamcard1_tablet_1x.jpg 1x, ./images/teamcard1_tablet_2x 2x"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="./images/teamcard1_mobile_1x.jpg 1x, ./images/teamcard1_mobile_2x 2x"
+                          media="(min-width: 480px)"
+                        />
+                        <img src="./images/teamcard1_mobile_1x.jpg"
                           alt="John Doe Product Designer"
                           width="270"
                           height="260"
                         />
+                      </picture>
                         <p class="name">John Doe</p>
                         <p class="position-job">Product Designer</p>
                       </li>
@@ -349,13 +370,25 @@
                     </div>
                     <div class="images-persons">
                       <li>
-                        <img
-                          src="images/teamcard2.jpg"
-                          srcset="images/teamcard2_2x.jpg 2x"
+                        <picture>
+                        <source
+                          srcset="./images/teamcard2_desktop_1x.jpg 1x, ./images/teamcard2_desktop_2x 2x"
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="./images/teamcard2_tablet_1x.jpg 1x, ./images/teamcard2_tablet_2x 2x"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="./images/teamcard2_mobile_1x.jpg 1x, ./images/teamcard2_mobile_2x 2x"
+                          media="(min-width: 480px)"
+                        />
+                        <img src="./images/teamcard2_mobile_1x.jpg"
                           alt="John Doe Frontend Developer"
                           width="270"
                           height="260"
                         />
+                        </picture>
                         <p class="name">John Doe</p>
                         <p class="position-job">Frontend Developer</p>
                       </li>
@@ -384,12 +417,25 @@
                     </div>
                     <div class="images-persons">
                       <li>
-                        <img
-                          src="images/teamcard3.jpg"
-                          srcset="images/teamcard3_2x.jpg 2x"
+                        <picture>
+                        <source
+                          srcset="./images/teamcard3_desktop_1x.jpg 1x, ./images/teamcard3_desktop_2x 2x"
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="./images/teamcard3_tablet_1x.jpg 1x, ./images/teamcard3_tablet_2x 2x"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="./images/teamcard3_mobile_1x.jpg 1x, ./images/teamcard3_mobile_2x 2x"
+                          media="(min-width: 480px)"
+                        />
+                        <img src="./images/teamcard3_mobile_1x.jpg"
                           alt="John Doe Marketing"
                           width="270"
                           height="260"
+                        />
+                      </picture>
                         />
                         <p class="name">John Doe</p>
                         <p class="position-job">Marketing</p>
@@ -419,13 +465,25 @@
                     </div>
                     <div class="images-persons">
                       <li>
-                        <img
-                          src="images/teamcard4.jpg"
-                          srcset="images/teamcard4_2x.jpg 2x"
-                          alt="John Doe UI Designer"
+                        <picture>
+                        <source
+                          srcset="./images/teamcard4_desktop_1x.jpg 1x, ./images/teamcard4_desktop_2x 2x"
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="./images/teamcard4_tablet_1x.jpg 1x, ./images/teamcard4_tablet_2x 2x"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="./images/teamcard4_mobile_1x.jpg 1x, ./images/teamcard4_mobile_2x 2x"
+                          media="(min-width: 480px)"
+                        />
+                        <img src="./images/teamcard4_mobile_1x.jpg"
+                          alt="John Doe Product UI Designer"
                           width="270"
                           height="260"
                         />
+                      </picture>
                         <p class="name">John Doe</p>
                         <p class="position-job">UI Designer</p>
                       </li>

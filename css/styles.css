@@ -460,12 +460,16 @@ h2 {
 
 .modal-content {
   background-color: rgba(255, 255, 255, 1);
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 4px;
   width: 450px;
   height: 609px;
   position: relative;
-  /* max-width: 90%; */
+  width: 95%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 609px;
+  overflow: scroll;
 }
 
 .modal-close {
@@ -503,7 +507,7 @@ h2 {
 
 .modal-ul > ul {
   padding: 0;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
@@ -530,8 +534,8 @@ h2 {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  /* width: 100%; */
-  margin-right: 12px;
+  width: 100%;
+  /* margin-right: 12px; */
   margin-bottom: 10px;
   outline: none;
   transition: 250ms;
@@ -561,16 +565,16 @@ h2 {
   fill: rgba(33, 150, 243, 1);
 }
 
-.text-input-modal {
-  /* padding-left: 40px; */
+/* .text-input-modal {
+  padding-left: 40px;
   width: 370px;
-}
+} */
 
 .input-comment-modal > input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
-  width: 370px;
+  /* width: 370px; */
   margin-right: 12px;
   margin-bottom: 10px;
   box-sizing: border-box;
